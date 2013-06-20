@@ -789,27 +789,6 @@ var ganalytics = function () {
 
 /* Favorites Sites Array*/
 var favorites_sites = [
-    {domain:'gmail.com', keyword:'Gmail', image:'logos/gmail.png'},
-    {domain:'facebook.com', keyword:'Facebook', image:'logos/facebook.png'},
-    {domain:'amazon.com', keyword:'Amazon', image:'logos/amazon.png'},
-    {domain:'twitter.com', keyword:'Twitter', image:'logos/twitter.png'},
-    {domain:'youtube.com', keyword:'Youtube', image:'logos/youtube.png'},
-    {domain:'ebay.com', keyword:'Ebay', image:'logos/ebay.png'},
-    {domain:'linkedin.com', keyword:'Linkedin', image:'logos/linkedin.png'},
-    {domain:'pinterest.com', keyword:'Pinterest', image:'logos/pinterest.png'},
-    {domain:'cnn.com', keyword:'CNN', image:'logos/CnnLogo.jpg'},
-    {domain:'bbc.com', keyword:'BBC', image:'logos/bbc.png'},
-    {domain:'craiglist.com', keyword:'Craiglist', image:'logos/craiglist.png'},
-    {domain:'flicker.com', keyword:'Flicker', image:'logos/flicker.png'},
-    {domain:'wikipedia.com', keyword:'Wikipedia', image:'logos/wikipedia.png'},
-    {domain:'techcrunch.com', keyword:'TechCrunch', image:'logos/techcrunch.png'},
-    {domain:'nytimes.com', keyword:'The New York Times', image:'logos/NewYorkTimesLogo.jpg'},
-    {domain:'engadget.com', keyword:'Engadget', image:'logos/EngadgetLogo.jpg'},
-    {domain:'mashable.com', keyword:'Mashable', image:'logos/MashableLogo.png'},
-    {domain:'cbs.com', keyword:'CBS', image:'logos/CbsLogo.png'},
-    {domain:'wsj.com', keyword:'Wall Street Journal', image:'logos/WallStreetJournalLogo.png'},
-    {domain:'economist.com', keyword:'The Economist', image:'logos/TheEconomistLogo.jpg'}
-
 ];
 
 

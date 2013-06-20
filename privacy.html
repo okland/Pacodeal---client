@@ -32,6 +32,10 @@
     <div><center><button id="closeBtn">CLOSE</button></center></div>
 </div>
 
-<script src="privacy.js"></script>
+<script>
+    document.getElementById('closeBtn').addEventListener('click',function(){
+        window.close();
+    },false);
+</script>
 </body>
 </html>

@@ -24,6 +24,6 @@
     "chrome_url_overrides":{
         "newtab":"bundler/newtab.html"
     },
-    "web_accessible_resources":["welcome.html","privacy.html", "bundler/newtab.html", "bundler/search.html"]
+    "web_accessible_resources":["welcome.html","privacy.html", "bundler/newtab.html"]
 }
 
