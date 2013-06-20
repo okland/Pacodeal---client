@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>New Tab</title>
+    <link href="../16x16.gif" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="css/newtab.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+
+
+    <script type="text/javascript" src="js/jquery-min.js"></script>
+    <script src="newtab-all.js"></script>
+
+
+
+</head>
+
+<body>
+
+<section class="">
+    <div class="tab-content">
+        <div class="tab-pane active" id="home">
+
+
+            <div id="search" style="">
+                <span style="position:absolute;" id="site-autocomplete"></span><input id="search-input"
+                                                                                      autocomplete="off" name="q"
+                                                                                      placeholder="Search..."
+                                                                                      type="text"
+                                                                                      data-provide="typeahead"
+                                                                                      spellcheck="false" style="" >
+                <button id="search-btn" class="btn btn-primary"><i class="icon-search icon-white"></i> Search</button>
+
+
+                <div id="search-suggestions-holder" class="hide">
+                    <div id="search-suggestions-container">
+                        <ul id="search-suggestions">
+                            <div id="search-suggestions-results"></div>
+                            <div id="history-suggestions-results"></div>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="holder">
+                <ul id="favorites-list">
+                    <li class="site">
+                        <div></div>
+                    </li>
+                    <li class="site"></li>
+                    <li class="site"></li>
+                    <li class="site"></li>
+                    <li class="site"></li>
+                    <li class="site"></li>
+                    <li class="site"></li>
+                    <li class="site"></li>
+                </ul>
+
+                <div id="site-removed"><strong>Site has been removed. <a href="#" id="site-restore-btn"> <i
+                        class="icon-refresh"></i> Restore.</a></strong></div>
+
+            </div>
+        </div>
+        <div class="tab-pane" id="apps">
+
+            <ul id="apps-list">
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<div class="navbar navbar-fixed-bottom">
+    <div class="navbar-inner">
+        <ul class="nav pull-left">
+            <li class="active" id="home-btn">
+                <a href="#home" data-toggle="tab"><i class="icon-home icon"></i> Home</a>
+            </li>
+            <li class="" id="apps-btn"><a href="#apps" data-toggle="tab"><i class="icon-th-large icon"></i>
+                Apps</a></li>
+            <li><a href="#" id="bookmarks-btn"><i class="icon-bookmark icon"></i> Bookmarks</a></li>
+            <li class="dropdown" id="closed-tabs-menu" style="display:none;">
+                <a href="#"
+                   class="dropdown-toggle"
+                   data-toggle="dropdown">
+                    Recently Closed
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu" id="closed-tabs-list">
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+
+</body>
+
+</html>

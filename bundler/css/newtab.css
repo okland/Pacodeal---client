@@ -1,0 +1,325 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    opacity: 0;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(chrome://theme/IDR_THEME_NTP_BACKGROUND?);
+
+}
+
+.holder {
+    margin: 75px 0 75px 0;
+}
+
+ul#favorites-list {
+    width: 950px;
+    height: 400px;
+    margin: 0px auto;
+    padding: 0;
+
+}
+
+ul#favorites-list li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+}
+
+ul#favorites-list li a.site {
+    height: 160px;
+    width: 212px;
+    display: block;
+    margin: 12px;
+    text-decoration: none;
+
+}
+
+.thumb {
+    width: 212px;
+    height: 130px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    opacity: 1;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+.thumb .favicon {
+    position: absolute;
+    bottom: 4px;
+    left: 5px;
+}
+
+.thumb .bottom-line {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3.25px;
+    background: #000;
+    opacity: 0.7;
+}
+
+.thumb:hover .bottom-line {
+    opacity: 1;
+}
+
+.thumb .close-btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    opacity: 0.5;
+    display: none;
+}
+
+
+.thumb .close-btn:hover {
+    opacity: 1;
+}
+
+.thumb:hover .close-btn {
+    display: block;
+}
+
+a div.title {
+    text-decoration: none;
+    margin-top: 5px;
+    display: block;
+    width: 200px;
+    height: 20px;
+    line-height: 15px;
+    font-size: 14px;
+    color: #000;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+#site-removed {
+    width: 300px;
+    margin: 0 auto;
+    display: none;
+}
+
+/* apps */
+
+#apps-list {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+#apps-list .app_box {
+    width: 180px;
+    height: 150px;
+    border: 0px solid #ccc;
+    box-shadow: 0px 0px 0px #eee;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+#apps-list .app_box a {
+    text-decoration: none;
+}
+
+#apps-list .app_box .thumb {
+    width: 80%;
+    height: 80%;
+    border: 0px;
+    margin: 8px auto 5px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#apps-list .app_box .site_title {
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    overflow: hidden;
+}
+
+#apps-list .app_box:hover .site_title {
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+#apps-list .app_box .remove-btn {
+    display: none;
+    cursor: pointer;
+    border-radius: 6px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 11px;
+    background: #fff;
+    padding: 0px 5px 3px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+#apps-list .app_box .remove-btn:hover {
+    background: #ddd;
+    color: #fff;
+}
+
+#apps-list .app_box:hover .remove-btn {
+    display: block;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #333;
+    background: -webkit-linear-gradient(top, #e0e0e0 0%, #b2b2b2 100%); /* Chrome10+,Safari5.1+ */
+    border-top: 1px solid #aaa;
+}
+
+/* start search */
+#search {
+    width: 750px;
+    margin: 80px auto 0;
+}
+
+#search ::-webkit-input-placeholder {
+    padding-left: 5px;
+}
+
+#search-input {
+    height: 40px;
+    width: 600px;
+    margin-bottom: 5px;
+    padding: 0 0 0 5px;
+    font-size: 17px;
+}
+
+#site-autocomplete {
+    height: 27px;
+    background: white;
+    margin: 2px;
+    display: none;
+    font-size: 17px;
+    padding: 10px 0 0 4px;
+    pointer-events: none;
+}
+
+#site-autocomplete #addition {
+    background: #ffebb6;
+    pointer-events: none;
+}
+
+#search button {
+    height: 40px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+#search-suggestions-holder {
+    position: relative;
+    width: 600px;
+}
+
+#search-suggestions-container {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: -1px 4px 12px rgba(50, 50, 50, 0.35);
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5) inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    padding: 0px;
+    margin: 0;
+}
+
+ul#search-suggestions {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul#search-suggestions li {
+    margin: 0;
+    padding: 3px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+ul#search-suggestions li a {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-decoration: none;
+}
+
+ul#search-suggestions li a span.title {
+    font-weight: bold;
+}
+
+ul#search-suggestions li a span.url {
+    color: #2bd908;
+    font-size: 90%;
+}
+
+ul#search-suggestions li a span.more {
+    color: #aaa;
+    font-size: 85%;
+}
+
+ul#search-suggestions li:hover {
+    background: rgba(220, 220, 220, 0.5);
+}
+
+ul#search-suggestions li:hover a {
+
+}
+
+ul#search-suggestions li.selected {
+    background: #ffebb6;
+}
+
+ul#search-suggestions li.selected a {
+
+}
+
+/* end search */

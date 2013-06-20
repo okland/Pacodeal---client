@@ -1,0 +1,29 @@
+{
+    "manifest_version":2,
+    "name":"Pacodeal",
+    "version":"0.0.0.7",
+    "description":"The creature that saves you money",
+    "permissions":["tabs", "http://*/*", "https://*/*","chrome://favicon/","topSites", "<all_urls>", "management", "history","unlimitedStorage","notifications"],
+    "content_scripts":[
+        {
+            "matches": ["http://*/*"],
+            "js": ["/pacodeal/config.js","/pacodeal/jquery.js"],
+            "run_at" : "document_start",
+            "all_frames" : false
+        }
+    ],
+    "background":{
+        "page":"background.html"
+    },
+    "icons":{
+        "16":"/bundler/img/icon16.png",
+        "48":"/bundler/img/icon48.png",
+        "128":"/bundler/img/icon128.png"
+    },
+    "content_security_policy":"script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+    "chrome_url_overrides":{
+        "newtab":"bundler/newtab.html"
+    },
+    "web_accessible_resources":["welcome.html","privacy.html", "bundler/newtab.html", "bundler/search.html"]
+}
+
